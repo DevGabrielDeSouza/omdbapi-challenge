@@ -13,7 +13,7 @@ describe("Testes com a OMDb API", () => {
 			expect(response.body).property("Language").to.contains("French");
 		});
 	});
-	it("Requeste de filme inexistente", () => {
+	it("Request de filme inexistente", () => {
 		cy.request("/?i=" + ID_FILME_INEXISTENTE + "&apikey=" + API_KEY).then(
 			(response) => {
 				expect(response.body).property("Response").to.equal("False");
