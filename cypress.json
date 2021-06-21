@@ -1,4 +1,5 @@
 {
-	"chromeWebSecurity": false,
-	"baseUrl": "http://www.omdbapi.com"
+  "chromeWebSecurity": false,
+  "baseUrl": "http://www.omdbapi.com",
+  "projectId": "vrqr4u"
 }
