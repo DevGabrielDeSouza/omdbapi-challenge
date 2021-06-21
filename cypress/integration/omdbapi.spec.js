@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 
-const ID_DO_FILME = "tt1285016";
+const ID_DO_FILME = Cypress.env("ID_DO_FILME");
 const ID_FILME_INEXISTENTE = "tt9999999";
-const API_KEY = "52ec71bf";
+const API_KEY = Cypress.env("API_KEY");
 
 describe("Testes com a OMDb API", () => {
 	it("Request do filme The Social Network", () => {
