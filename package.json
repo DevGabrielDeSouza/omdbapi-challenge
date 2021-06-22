@@ -4,8 +4,15 @@
 	"description": "An API automated test challenge for Noesis.",
 	"main": "index.js",
 	"scripts": {
-		"test": "test",
-		"e2e": "cypress open"
+		"test": "cypress run",
+		"test-ci": "npx cypress run --record --key 784cc5e8-4f00-4079-998e-b8f7c7e475d3",
+		"test-chrome": "cypress run --browser chrome",
+		"test-chrome-ci": "npx cypress run --browser chrome --record --key 784cc5e8-4f00-4079-998e-b8f7c7e475d3",
+		"test-edge": "cypress run --browser edge",
+		"test-edge-ci": "npx cypress run --browser edge --record --key 784cc5e8-4f00-4079-998e-b8f7c7e475d3",
+		"test-firefox": "cypress run --browser firefox",
+		"test-firefox-ci": "npx cypress run --browser firefox --record --key 784cc5e8-4f00-4079-998e-b8f7c7e475d3",
+		"cypress-ide": "cypress open"
 	},
 	"repository": {
 		"type": "git",
